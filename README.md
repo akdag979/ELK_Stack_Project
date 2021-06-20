@@ -13,7 +13,10 @@ Objective 1: Setup a virtual private network and 3VMs.
 -Create a virtual machine named Jump-Box-Provisioner. Take note of the publicIpAddress.
 	SSH into your VM. In my example, the IP address is 137.135.52.100
 		-->ssh azureuser@137.135.52.100
+
 -Create 3 webservers named as Web-1, Web-2, Web-3 in an availibilty set without public adress.
+	Make sure image is Ubuntuserver and size is "Standard B1ms"
+	Use pentest.yml file to configure VM's with docker.
 
 -Create a load balancer
 
